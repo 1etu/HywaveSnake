@@ -1,0 +1,27 @@
+name: TheSnake
+version: '1.0'
+main: net.hywave.snake.Engine
+api-version: 1.21
+description: A snake minigame in Minecraft - made for Hywave
+author: etu
+depend: [ProtocolLib]
+commands:
+  snake:
+    usage: /snake [start|stop|reset|coins]
+    aliases: [s]
+    permission: snake.play
+  debug:
+    usage: /debug
+    aliases: [d]
+    permission: snake.debug
+  leaderboard:
+    usage: /leaderboard [score|length|fastest|coins|stats|help] [limit|player]
+    aliases: [lb, top, rank, ranks]
+    permission: snake.leaderboard
+permissions:
+  snake.play:
+    default: true
+  snake.leaderboard:
+    default: true
+  snake.admin.setcoins:
+    default: op

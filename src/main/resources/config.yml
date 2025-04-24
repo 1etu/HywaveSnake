@@ -1,0 +1,3 @@
+game:
+  tick-rate: 5
+  initial-snake-length: 3 
